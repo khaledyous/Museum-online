@@ -1,0 +1,244 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+	overflow-x: hidden;
+	background: #2b2f33;
+}
+
+header {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	background-image: url(../img/achtegrrond.png);
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+#reviews.cover {
+	background: white;
+}
+
+.BezoekA {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+
+#bezoek,
+#Openingstijden {
+	position: absolute;
+	bottom: 10%;
+	color: white;
+}
+
+#bezoek {
+	left: 10%;
+	border: 1px solid white;
+	padding: 15px;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+#Openingstijden {
+	right: 10%;
+}
+
+#Openingstijden a {
+	color: white;
+	text-decoration: none;
+}
+
+#InformationSlide{
+	opacity:1;
+	transition: 0,5s ease-in-out;
+} 
+
+#InformationSlide.fadeOut {
+	opacity: 0;
+}
+
+.cover {
+	min-height: 100vh;
+	min-width: 100%;
+	padding: 10%;
+	position: relative;
+}
+
+#Informatie {
+	height: 100vh;
+	max-width: 100vw;
+	position: relative;
+}
+
+.InformationTitle {
+	position: absolute;
+	padding-left: 10%;
+}
+
+#onlineMuseum {
+	background: url(../img/nxt-museum-amsterdam.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#geschiedenis {
+	background: url(../img/dimensional-sampling-1-by-yuxi-cao-james-part-of-the-inaugural-exhibition-at-nxt-museum-shifting-proximities-opening-29-august-c-peter-tijhuis-2-15991370.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#tentoonstellingen {
+	background: url(../img/tentoon.jpg);
+}
+
+#reviewImgs {
+	background: white;
+	display: flex;
+	justify-content: center;
+	max-width: 80vw;
+}
+
+section#reviews.cover {
+	min-height: min-content;
+}
+
+#reviewImgs img {
+	width: 40vw;
+}
+
+.reviewTitle {
+	color:#41474e;
+	font-size: 5rem;
+	margin-bottom: 50px;
+	align-self: center;
+}
+
+#contact {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contactTitle {
+	color: white;
+	font-size: 3rem;
+	margin-bottom: 50px;
+}
+
+#contact ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+.title {
+	color: white;
+	font-size: 5rem;
+	margin-bottom: 50px;
+	width: fit-content;
+	position: absolute;
+	bottom: 10%;
+}
+
+#contact a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	margin-left: 0;
+	border-bottom: 2px solid white;
+}
+
+#contact a:hover {
+	background: #282a2b;
+	transition: 0.2s;
+}
+
+#contact li {
+	list-style: none;
+	float: left;
+}
+
+.pageText {
+	max-width: 50vw;
+	color: #c2ccce;
+	font-size: 20px;
+	transition: all 0.5s ease-in-out;
+	background: #41474e;
+	min-width: 100vw;
+	padding: 5% 10%;
+}
+
+@media (max-width: 1000px) {
+	#bezoek,
+	#Openingstijden {
+		position: unset;
+		text-align: center;
+		margin: 50px;
+	}
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+	#NXTmuseumlogo {
+		margin-bottom: 10%;
+	}
+	.cover {
+		min-height: 75vh;
+	}
+	.title {
+		-webkit-transform: translate(-50%);
+		left: 50%;
+		bottom: 20px;
+		font-size: 2rem;
+	}
+	.reviewTitle,
+	.contactTitle {
+		font-size: 2rem;
+	}
+	.reviewTitle {
+		text-align: center;
+	}
+	section#reviews.cover {
+		min-height: min-content;
+	}
+	.pageText {
+		font-size: 11px;
+	}
+	#reviewImgs {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#contact ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#contact.pageText {
+		align-items: center;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+	}
+	#contact {
+		min-height: 50vh;
+	}
+	#contact a {
+		padding-left: 10vw;
+		padding-right: 10vw;
+	}
+	#reviewImgs img {
+		width: 60vw;
+	}
+}
